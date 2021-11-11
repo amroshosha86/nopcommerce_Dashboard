@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="firefox"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="tests.AddToCart">
+        <methods>
+          <include name="startDriver"/>
+          <include name="UserCanAddToCart"/>
+          <include name="UserCanSearcForProducts"/>
+          <include name="stopDriver"/>
+          <include name="UserCanCompleteCheckout"/>
+          <include name="screenshotOnFailure"/>
+          <include name="UserCanRegisterSuccessfully"/>
+          <include name="UserCanOpenProductDetails"/>
+        </methods>
+      </class> <!-- tests.AddToCart -->
+      <class name="tests.ChangeLanguageTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="UserCanSearcForProducts"/>
+          <include name="stopDriver"/>
+          <include name="UserCanChangeLanguage"/>
+          <include name="screenshotOnFailure"/>
+          <include name="UserCanOpenProductDetails"/>
+        </methods>
+      </class> <!-- tests.ChangeLanguageTest -->
+      <class name="tests.EmailProductPage">
+        <methods>
+          <include name="UserCanSearcForProducts"/>
+          <include name="startDriver"/>
+          <include name="UserCanShareProductWithFrind"/>
+          <include name="stopDriver"/>
+          <include name="UserCanRegisterSuccessfully"/>
+          <include name="UserCanOpenProductDetails"/>
+          <include name="screenshotOnFailure"/>
+        </methods>
+      </class> <!-- tests.EmailProductPage -->
+      <class name="tests.SearcPage">
+        <methods>
+          <include name="UserCanOpenProductDetails"/>
+          <include name="startDriver"/>
+          <include name="stopDriver"/>
+          <include name="UserCanSearcForProducts"/>
+          <include name="screenshotOnFailure"/>
+        </methods>
+      </class> <!-- tests.SearcPage -->
+      <class name="tests.AddReviewTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="openReviewPage"/>
+          <include name="stopDriver"/>
+          <include name="UserCanRegisterSuccessfully"/>
+          <include name="screenshotOnFailure"/>
+          <include name="UserCanAddProductReview"/>
+        </methods>
+      </class> <!-- tests.AddReviewTest -->
+      <class name="tests.SearchByAutocomplete">
+        <methods>
+          <include name="startDriver"/>
+          <include name="stopDriver"/>
+          <include name="screenshotOnFailure"/>
+          <include name="UserCanSearchByAutoComplete"/>
+        </methods>
+      </class> <!-- tests.SearchByAutocomplete -->
+      <class name="tests.AddTpWishList">
+        <methods>
+          <include name="startDriver"/>
+          <include name="UserCanRemoveProductFrimWishList"/>
+          <include name="stopDriver"/>
+          <include name="UserCanSearcForProducts"/>
+          <include name="screenshotOnFailure"/>
+          <include name="UserCanAddProductToWishList"/>
+          <include name="UserCanOpenProductDetails"/>
+        </methods>
+      </class> <!-- tests.AddTpWishList -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
